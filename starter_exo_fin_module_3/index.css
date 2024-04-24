@@ -9,6 +9,7 @@
     --color_tertiary:#1a5a8d;
     --color_quaternary: #ECECEC;
     --color_quinquennial: rgb(190, 183, 183);
+    --color_sexennal: #C4C4C4;
 }
 * {
     padding: 0;
@@ -19,7 +20,7 @@
 
 h2 {
     color: var(--color-primary);
-    margin-left:  35px;
+    margin-left:  60px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -33,7 +34,6 @@ header {
     justify-content: space-between;
     align-items: center;
     color: var(--color-secundary);
-    max-width: 1400px;
    
 }
 
@@ -77,7 +77,7 @@ h1 {
     position: relative;
     text-align: center;
     color: var(--color-secundary);
-    max-width:  1400px;
+
 }  
 #play_block {
     background-color: black;
@@ -173,7 +173,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding: 10px;
     background-color: var(--color_quaternary);
     box-shadow: 0 2px 0 var(--color_quinquennial);
@@ -189,4 +189,102 @@ nav {
     display: flex;
     flex-direction: column;
 }
+/*  */
+
+/* films */
+
+.film_block {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+ #first_film {
+    width:92%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .movie_description {
+    background-color: var(--color_quaternary);
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+ }
+ #poster_one {
+    max-width: 15%;
+ }
+ #poster_one >img {
+    margin: 20px 10px;
+    width: 130px;
+    height: 200px;
+ }
+#movie_one {
+    width: 30%;
+    padding: 20px 0;
+}
+
+.movie_story {
+    width: 100%;
+}
+
+.movie_story p{
+    text-align: right;
+    margin: 20px 10px;
+    margin-left: 50%;
+    padding: 10px;
+    
+}
+
+#room_one {
+    background-color: var(--color_sexennal);
+    display: flex;
+    flex-direction: row;
+
+ }
+
+ .room_hour {
+    background-color: #186CB0;
+    width: 20%;
+    margin: 10px;
+    border-radius: 5px;
+    color: var(--color_quaternary);
+ }
+
+ .first_hour {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+ 
+ }
+
+ .first_hour_room {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+ }
+
+ .first_hour_room p {
+    padding: 3px 0;
+ }
+ .first_hour_session {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+ }
+
+ .first_hour_session p {
+    padding: 3px 10px;
+ }
+
+
 /*  */
