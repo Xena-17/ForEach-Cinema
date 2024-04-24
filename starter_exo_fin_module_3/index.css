@@ -28,12 +28,35 @@ header {
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 50px;
     display: flex;
+}
 
+#account_spaces {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+ img {
+    height: 30px;
+ }
+
+#my_account, #pro_space {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#my_account:hover,#pro_space:hover{
+    font-weight: bold;
+    cursor: pointer;
 
 }
 
+#pro_space {
+    margin-right: 50px;
+}
 
 /*  */
