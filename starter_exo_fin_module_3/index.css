@@ -5,7 +5,8 @@
 
 :root {
 	--color-primary: #186CB0;
-    --color-secundary : white;
+    --color-secundary: white;
+    --color_tertiary:#1a5a8d;
 }
 * {
     padding: 0;
@@ -88,16 +89,59 @@ h1 {
     background-color: #D03737;
     margin: 10px 5px 15px 5px;
     padding: 10px;
-}
+    }
 
 #play:hover {
     background-color: #a33c3c;
-    cursor:pointer
+    cursor:pointer;
+    font-weight: bold;
 }
 #try {
     padding: 10px;
     text-align: left;
 }
 
+
+/*  */
+
+/*navbar*/
+
+nav {
+    width: 95%;
+    margin: auto;
+}
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: var(--color-secundary);
+
+}
+
+#anchor_tarification {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-primary);
+    margin-right: 5px;
+    padding: 10px;
+
+}
+
+#anchor_films {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-primary);
+    margin-left: 5px;
+    padding: 10px;
+ 
+}
+
+#anchor_tarification:hover, #anchor_films:hover {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--color_tertiary);
+}
 
 /*  */
