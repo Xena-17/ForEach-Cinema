@@ -70,7 +70,7 @@ h1 {
     max-width:  1400px;
 }  
 #play_block {
-    background-color: blue;
+    background-color: black;
     position: absolute;
     top: 80px;
     right: 80px;
@@ -82,6 +82,21 @@ h1 {
 .jumbotron_container img {
     width: 95%;
     margin: 10px;
+}
+
+#play {
+    background-color: #D03737;
+    margin: 10px 5px 15px 5px;
+    padding: 10px;
+}
+
+#play:hover {
+    background-color: #a33c3c;
+    cursor:pointer
+}
+#try {
+    padding: 10px;
+    text-align: left;
 }
 
 
