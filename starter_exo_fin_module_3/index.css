@@ -1,0 +1,39 @@
+@font-face {
+    font-family: uniform;
+    src: url(./assets/fonts/Uniform.ttf);
+}
+
+:root {
+	--color-primary: #186CB0;
+    --color-secundary : white;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: uniform;
+}
+
+/* header */
+
+header {
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-secundary);
+    max-width: 1400px;
+   
+}
+
+h1 {
+    font-size: 20px;
+    margin-left: 50px;
+    display: flex;
+
+
+}
+
+
+/*  */
