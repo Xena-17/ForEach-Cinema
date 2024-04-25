@@ -80,7 +80,7 @@ h1 {
 
 }  
 #play_block {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.648);
     position: absolute;
     top: 80px;
     right: 80px;
@@ -197,30 +197,31 @@ nav {
     margin: auto;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 
 }
- #first_film {
+ .film {
     width:92%;
     margin: auto;
     display: flex;
     flex-direction: column;
+    background-color: var(--color_quaternary);
  }
 
  .movie_description {
-    background-color: var(--color_quaternary);
     display: flex;
     flex-direction: row;
     flex-grow: 1;
  }
- #poster_one {
+ .poster {
     max-width: 15%;
  }
- #poster_one >img {
+ .poster >img {
     margin: 20px 10px;
     width: 130px;
     height: 200px;
  }
-#movie_one {
+.movie {
     width: 30%;
     padding: 20px 0;
 }
@@ -232,15 +233,17 @@ nav {
 .movie_story p{
     text-align: right;
     margin: 20px 10px;
-    margin-left: 50%;
+    margin-left: 30%;
     padding: 10px;
     
 }
 
-#room_one {
+.room {
     background-color: var(--color_sexennal);
     display: flex;
     flex-direction: row;
+    height: 150px;
+    margin: 10px;
 
  }
 
@@ -252,37 +255,38 @@ nav {
     color: var(--color_quaternary);
  }
 
- .first_hour {
+ .hour {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
     width: 100%;
-    padding: 10px 20px;
+    padding: 20px;
  
  }
 
- .first_hour_room {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
- }
-
- .first_hour_room p {
-    padding: 3px 0;
- }
- .first_hour_session {
+ .hour_room {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
-    padding: 10px;
+
  }
 
- .first_hour_session p {
+ .hour_room p {
+    padding: 3px 0;
+ }
+
+ .hour_session {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+ .hour_session p {
     padding: 3px 10px;
  }
 
