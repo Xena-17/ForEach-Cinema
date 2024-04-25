@@ -2,6 +2,17 @@
     font-family: uniform;
     src: url(./assets/fonts/Uniform.ttf);
 }
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
 
 :root {
 	--color-primary: #186CB0;
@@ -208,6 +219,20 @@ nav {
     background-color: var(--color_quaternary);
  }
 
+ .film_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 5px;
+ }
+ .film_title span {
+    padding-left: 10px;
+ }
+
+ .film_title > span:hover{
+    cursor: pointer;
+ }
+
  .movie_description {
     display: flex;
     flex-direction: row;
@@ -261,10 +286,15 @@ nav {
     justify-content: center;
     align-items:flex-start;
     width: 100%;
-    padding: 20px;
- 
- }
+    padding: 22px;
+  }
 
+
+  .hour:hover {
+    cursor: pointer;
+    background-color: var(--color_tertiary);
+    font-weight: bold;
+  }
  .hour_room {
     display: flex;
     flex-direction: column;
@@ -284,11 +314,39 @@ nav {
     justify-content: center;
     align-items: center;
     width: 50%;
-  }
+}
 
  .hour_session p {
     padding: 3px 10px;
  }
+
+ #comedy {
+    background-color: #4F8B1A;
+    color: var(--color-secundary);
+    padding: 5px;
+}
+
+#full {
+    background-color: #FEE961;
+    color: black;
+    padding: 5px;
+}
+
+#action {
+    background-color: #6D27A2;
+    color: var(--color-secundary);
+    padding: 5px;
+}
+
+#sf {
+    background-color: #794808;
+    color: var(--color-secundary);
+    padding: 5px;
+}
+
+.stars {
+    color: var(--color-primary);
+}
 
 
 /*  */

@@ -84,19 +84,29 @@
                     </div>
                     <div class="movie">
                         <p class="film_title">Le Formateur
-                            <span>
-                                <img src="./icons/favorite_border_black_24dp.svg" alt="">
+                            <span class="material-icons" onClick ="changeColor">
+                                favorite_border
                             </span>
                         </p>
                         <p>Sortie le 5 Mai 2024</p>
-                        <p>
-                            <span><img src="./icons/star_rate_black_24dp.svg" alt="étoile"></span>
-                            <span><img src="./icons/star_rate_black_24dp.svg" alt="étoile"></span>
-                            <span><img src="./icons/star_rate_black_24dp.svg" alt="étoile"></span>
-                            <span><img src="./icons/star_rate_black_24dp.svg" alt="étoile"></span>
-                            <span><img src="./icons/star_rate_black_24dp.svg" alt="étoile"></span>
+                        <p class="stars">
+                            <span class="material-icons">
+                                star
+                            </span>
+                            <span class="material-icons">
+                                star
+                            </span>
+                            <span class="material-icons">
+                                star
+                            </span>
+                            <span class="material-icons">
+                                star
+                            </span>
+                            <span class="material-icons">
+                                star_outline
+                            </span>
                         </p>
-                        <p>Comédie</p>
+                        <span id="comedy">Comédie</span>
                     </div>
                     <div class="movie_story">
                         <p>Un formateur, spécialiste de l'enseignement traditionnel,
@@ -116,7 +126,7 @@
                                   <img src="./icons/desktop_windows_white_24dp.svg" alt="icone écran pc">
                                 </p>
                                 <p>Salle 1</p>
-                                <p id="full">Complet</p>
+                                <p id="full"><span>Complet</span></p>
                             </div>
                             <div class="hour_session">
                                 <p>
@@ -168,31 +178,45 @@
             <div class="film">
                 <div class="movie_description">
                     <div class="poster">
-                        <img src="./assets/images/moviesImages/le_formateur_poster.JPG" alt="affiche film le formateur">
+                        <img src="./assets/images/moviesImages/aucun_visuel_poster.png" alt="affiche film sans visuel">
                     </div>
                     <div class="movie">
-                        <p class="film_title">Le Formateur
-                            <span>
-                                <img src="./icons/favorite_border_black_24dp.svg" alt="">
+                        <p class="film_title">Ma vie de dev
+                            <span class="material-icons" onClick="changeColor()">
+                                favorite_border
                             </span>
                         </p>
-                        <p>Sortie le 5 Mai 2024</p>
-                        <p>
-                            <span><img src="./icons/star_rate_black_24dp.svg" alt="étoile"></span>
-                            <span><img src="./icons/star_rate_black_24dp.svg" alt="étoile"></span>
-                            <span><img src="./icons/star_rate_black_24dp.svg" alt="étoile"></span>
-                            <span><img src="./icons/star_rate_black_24dp.svg" alt="étoile"></span>
-                            <span><img src="./icons/star_rate_black_24dp.svg" alt="étoile"></span>
+                        <p>Sortie le 28 avril 2024</p>
+                        <p class="stars">
+                            <span class="material-icons">
+                                star
+                            </span>
+                            <span class="material-icons">
+                                star
+                            </span>
+                            <span class="material-icons">
+                                star_half
+                            </span>
+                            <span class="material-icons">
+                                star_outline
+                            </span>
+                            <span class="material-icons">
+                                star_outline
+                            </span>
                         </p>
-                        <p>Comédie</p>
+                        <p>
+                            <span id="action">Action</span>
+                            <span id="sf">SF</span>
+                        </p>
                     </div>
                     <div class="movie_story">
-                        <p>Un formateur, spécialiste de l'enseignement traditionnel,
-                            est assigné à une classe turbulente, défiant toutes les règles
-                            de l'éducation. Entre quiproquos hilarants et leçons de vie
-                            inattendues, ce formateur devra repousser ses limites pour conquérir le coeur
-                            de ses élèves et leur transmettre bien plus que des connaissances
-                            académiques.
+                        <p>
+                            Un développeur web de talent se retrouve soudainement
+                            plongé dans un monde cybernétique où la frontière entre la réalité
+                            et le virtuel s'estompe. Pour survivre, il doit maîtriser de nouvelles
+                            compétences, afronter des défis et naviguer à travers un paysage
+                            numérique en constante évolution tout en cherchant désespérement
+                            un moyen de retourner dans le monde qu'il connaît.
                         </p>
                     </div>
                 </div>
@@ -203,15 +227,15 @@
                                 <p>
                                   <img src="./icons/desktop_windows_white_24dp.svg" alt="icone écran pc">
                                 </p>
-                                <p>Salle 1</p>
+                                <p>Salle 2</p>
                                 <p id="full">Complet</p>
                             </div>
                             <div class="hour_session">
                                 <p>
                                   <img src="./icons/watch_later_white_24dp.svg" alt="icone heure">
                                 </p>
-                                <p>13h10</p>
-                                <p>(15h00)</p>
+                                <p>12h50</p>
+                                <p>(15h20)</p>
                             </div>
                         </div>
                     </div>
@@ -221,35 +245,18 @@
                                 <p>
                                   <img src="./icons/desktop_windows_white_24dp.svg" alt="icone écran pc">
                                 </p>
-                                <p>Salle 1</p>
+                                <p>Salle 2</p>
                             </div>
                             <div class="hour_session">
                                 <p>
                                   <img src="./icons/watch_later_white_24dp.svg" alt="icone heure">
                                 </p>
-                                <p>16h50</p>
+                                <p>16h10</p>
                                 <p>(18h40)</p>
                             </div>
                         </div>
                     </div>
-                    <div class="room_hour">
-                        <div class="hour">
-                            <div class="hour_room">
-                                <p>
-                                  <img src="./icons/desktop_windows_white_24dp.svg" alt="icone écran pc">
-                                </p>
-                                <p>Salle 1</p>
-                            </div>
-                            <div class="hour_session">
-                                <p>
-                                  <img src="./icons/watch_later_white_24dp.svg" alt="icone heure">
-                                </p>
-                                <p>19h30</p>
-                                <p>(21h20)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                 </div>
             </div>
         </div>
     </section>
